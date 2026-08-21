@@ -397,7 +397,7 @@ function printOrderBill(id, event) {
     </head>
     <body>
       <div class="receipt-header">
-        <h2>QuickShop Store</h2>
+        <h2>The Ingredient Company Store</h2>
         <p>Order Tax Invoice / Bill</p>
         <p><strong>Order ID: #${o.id || o._id}</strong></p>
         <p>Date: ${o.date || new Date().toLocaleString()}</p>
@@ -437,7 +437,7 @@ function printOrderBill(id, event) {
 
       <div class="receipt-footer">
         <p>*** Thank You For Shopping With Us! ***</p>
-        <p>QuickShop Admin Dashboard</p>
+        <p>The Ingredient Company Admin Dashboard</p>
       </div>
     </body>
     </html>
@@ -460,7 +460,7 @@ function generateEBillText(o) {
     `${idx + 1}. *${item.name}* (Qty: ${item.quantity}) - ₹${(item.price * item.quantity) || 0}`
   ).join('\n');
 
-  return `🧾 *QUICKSHOP - OFFICIAL E-BILL*
+  return `🧾 *THE INGREDIENT COMPANY - OFFICIAL E-BILL*
 --------------------------------
 *Order ID:* #${o.id || o._id}
 *Date:* ${o.date || '—'}
@@ -478,7 +478,7 @@ Delivery Fee: ₹${o.deliveryFee || 0}${o.discount ? `\nDiscount: -₹${o.discou
 📍 *Delivery Address:*
 ${o.address || '—'}
 
-Thank you for shopping with QuickShop! 🙏
+Thank you for shopping with The Ingredient Company! 🙏
 For any questions, feel free to contact us.`;
 }
 

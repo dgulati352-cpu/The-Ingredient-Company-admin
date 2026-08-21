@@ -1,7 +1,7 @@
 {
-  "name": "quickshop-admin",
+  "name": "the-ingredient-company-admin",
   "version": "1.0.0",
-  "description": "QuickShop Admin Panel",
+  "description": "The Ingredient Company Admin Panel",
   "scripts": {
     "dev": "npx -y serve .",
     "start": "npx -y serve ."

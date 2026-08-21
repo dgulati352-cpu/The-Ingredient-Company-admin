@@ -1,7 +1,7 @@
 {
-  "name": "QuickShop Admin",
-  "short_name": "QS Admin",
-  "description": "Admin panel for QuickShop local store.",
+  "name": "The Ingredient Company Admin",
+  "short_name": "TIC Admin",
+  "description": "Admin panel for The Ingredient Company store.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#0f172a",
