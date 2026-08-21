@@ -9,9 +9,10 @@ const firebaseConfig = {
   measurementId: "G-YMX4MBE8G2"
 };
 
-firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const storage = firebase.storage();
+const analytics = firebase.analytics ? firebase.analytics() : null;
 
 // ===== ADMIN CREDENTIALS (stored in localStorage) =====
 const CRED_VERSION = '2';
